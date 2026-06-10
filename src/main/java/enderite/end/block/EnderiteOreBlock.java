@@ -1,18 +1,24 @@
-package enderite.end.block;
+package enderite.end.registry;
 
-import net.minecraft.block.ExperienceDroppingBlock;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.util.math.intprovider.UniformIntProvider;
+import enderite.end.EnderiteMod;
+import enderite.end.item.ModArmorMaterial;
+import enderite.end.item.ModToolMaterial;
+import net.minecraft.item.*;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
 
-public class EnderiteOreBlock extends ExperienceDroppingBlock {
+public class ModItems {
 
-    public EnderiteOreBlock() {
-        super(
-            UniformIntProvider.create(3, 7),
-            AbstractBlock.Settings.create()
-                .hardness(5.0f)
-                .resistance(1200.0f)
-                .requiresTool()
-        );
-    }
-}
+    public static final Item RAW_ENDERITE = new Item(new Item.Settings());
+    public static final Item ENDERITE_INGOT = new Item(new Item.Settings());
+
+    public static final Item ENDERITE_PICKAXE =
+        new PickaxeItem(ModToolMaterial.ENDERITE, new Item.Settings());
+    public static final Item ENDERITE_AXE =
+        new AxeItem(ModToolMaterial.ENDERITE, new Item.Settings());
+    public static final Item ENDERITE_SHOVEL =
+        new ShovelItem(ModToolMaterial.ENDERITE, new Item.Settings());
+    public static final Item ENDERITE_HOE =
+        new HoeItem(ModToolMaterial.ENDERITE, new Item.Settings());
+    public static final Item ENDER
