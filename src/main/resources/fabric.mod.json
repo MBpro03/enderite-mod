@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "enderite",
+  "version": "${version}",
+  "name": "Enderite",
+  "description": "Adds Enderite ore, tools, and armor to The End dimension.",
+  "authors": [],
+  "contact": {},
+  "license": "CC0-1.0",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["enderite.end.EnderiteMod"],
+    "client": ["enderite.end.EnderiteModClient"]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
