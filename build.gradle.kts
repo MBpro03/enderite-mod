@@ -1,5 +1,5 @@
 plugins {
-    id("net.fabricmc.loom") version "1.7.4"
+    id("net.fabricmc.loom") version "1.9.2"
 }
 
 version = project.property("mod_version") as String
@@ -12,7 +12,7 @@ repositories {
 
 dependencies {
     minecraft("com.mojang:minecraft:${project.property("minecraft_version")}")
-    mappings("net.fabricmc:yarn:${project.property("minecraft_version")}+build.1:v2")
+    mappings("net.fabricmc:yarn:1.21.11+build.1:v2")
     modImplementation("net.fabricmc:fabric-loader:${project.property("loader_version")}")
     modImplementation("net.fabricmc.fabric-api:fabric-api:${project.property("fabric_api_version")}")
 }
